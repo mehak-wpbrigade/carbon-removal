@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 5px solid #53b94d;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: #002e5f;
+    font-size: 15px;
+    line-height: 1.2;
+    word-break: break-all;
+    font-weight: 600;
+    padding: 0 15px;
+    position: relative;
+}
+
+.nav-btn{
+    padding: 0 20px;
+}
+
+.nav-btn a{
+    background-color: #53b94d;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s;
+    border: 2px solid #53b94d;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-btn a:hover{
+    background-color: transparent;
+    border: 2px solid #53b94d;
+    color: #53b94d;
+}
+
+.nav-menu a:before{
+    content: " ";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    background-color: #53b94d;
+    width: 0;
+    height: 2px;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.6s;
+    transform: translateX(-50%);
+}
+
+.nav-menu a:hover::before{
+    width: 73%;
+}
+
+/*-----hero-sec*/
+.hero-sec{
+    background-image: url("../images/hero.png");
+}
+
+.hero-sec h1,
+.hero-sec p{
+    color: #fff;
+}
